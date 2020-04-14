@@ -1,14 +1,95 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="./css/style.css">
+<!DOCTYPE HTML>
+<html lang="jp" dir="ltr">
+  <head>
+    <meta charset="utf-8">
 
-    
-    <title>Document</title>
-</head>
-<body>
-    <h1>otsubo index page</h1>
+    <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="stylesheet" href="./css/styles.css"/>
+    <link rel="stylesheet" href="./css/hover.css"/>
+    <link rel="stylesheet" href="./css/jquery.pagepiling.css"/>
 
-    <a href="./next.html">to next page</a>
-</body>
+    <script src='http://code.jquery.com/jquery-latest.min.js'></script>
+    <script src="https://s3.amazonaws.com/menumaker/menumaker.min.js"></script>
+
+    <title>Jyobiweb</title>
+  </head>
+  <body>
+    <div id="cssmenu">
+      <ul>
+        <li id="page1" data-menuanchor="page1" class="active"><a href="#page1">TOP</a></li>
+        <li id="page2" data-menuanchor="page2"><a href="#page2" >News</a></li>
+        <li id="page3" data-menuanchor="page3"><a href="#page3" >Schedule</a></li>
+        <li id="page4" data-menuanchor="page4"><a href="#page4" >Gallery</a></li>
+      </ul>
+    </div>
+    <div id="pagepiling">
+      <!--Top-->
+      <div class="contents" id="section1">
+        <div class="Top">
+          <div id="textFloat">
+            <div>
+              <p class="main">welcome!!</p>
+              <p class="sub">Morijyobi Students</p>
+            </div>
+          </div>
+        </div>
+        <div class="down">
+          <a href="#page2"><span></span><span></span><span></span></a>
+        </div>
+      </div>
+      <!--News-->
+      <div class="contents" id="section2">
+        <div class="News">
+          <div class="text_area">
+            <div>
+              <p>クラスの掲示板</p>
+              <a id="button" href="signin">> sign in</a>
+            </div>
+          </div>
+          <div class="bkImg"><img src="./img/background.jpg" width="100%"></div>
+        </div>
+      </div>
+      <!--Schedule-->
+      <div class="contents" id="section3">
+        <div class="Schedule">
+          <div class="calendar">
+              <iframe src="https://calendar.google.com/calendar/b/1/embed?amp;wkst=1&amp;bgcolor=%234285F4&amp;ctz=Asia%2FTokyo&amp;src=bW9yaWp5b2JpLmFjLmpwX2Y5bDNuMGw1c3I0dmdycDE5czgxaTJzbzhzQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=amEuamFwYW5lc2UjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%23F4511E&amp;color=%230B8043&amp;showDate=0&amp;showNav=0&amp;showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+          </div>
+          <div class="text_area">
+            <div>
+              <p>今日のスケジュール</p>
+              <a id="button" href="https://calendar.google.com/calendar?cid=bW9yaWp5b2JpLmFjLmpwX2Y5bDNuMGw1c3I0dmdycDE5czgxaTJzbzhzQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20">> こちら</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <!--Gallery-->
+      <div class="contents" id="section4">
+        <div class="Gallery">
+          <div class="frame img1"><img src="./img/sample.jpg" width="400"></div>
+          <div class="frame img2"><img src="./img/sample.jpg" width="400"></div>
+          <div class="frame img3"><img src="./img/sample.jpg" width="400"></div>
+          <div class="frame img4"><img src="./img/sample.jpg" width="400"></div>
+
+          <div class="text_area">
+            <div>
+              <p>フォトギャラリー</p>
+              <a id="button" href="calendar.html">> こちら</a>
+            </div>
+          </div>
+      </div>
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="./js/jquery.pagepiling.min.js"></script>
+
+    <script src="./js/fade.js"></script>
+    <script src="./js/section.js"></script>
+    <script src="./js/menu.js"></script>
+    <script>
+      onClick();
+    </script>
+  </body>
 </html>

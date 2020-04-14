@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,li {
+    list-style: none;
+    margin-top: 20px;
+}
+
+li input {
+    float: right;
+}
+
+input#button{
+    width: 100%;
+}
+
+ul a {
+    float: right;
+}
+
+form {
+    display: block;
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    max-width: 100vw;
+    max-height: 100vh;
+}
