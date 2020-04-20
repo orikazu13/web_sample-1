@@ -1,6 +1,6 @@
 # sample web page
 
-https://otsubo-jyobi.github.io/web_sample2
+https://otsubo-jyobi.github.io/web_sample
 
 https://<自分のアカウント名>.github.io/<リポジトリ名>
 
