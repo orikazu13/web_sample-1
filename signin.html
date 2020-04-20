@@ -2,19 +2,11 @@
 <html>
 <head>
     <link rel="stylesheet" href="./css/news.css"/>
-    {%if error%}
-        <style>
-            input#id,input#p_word {
-                background-color: #ff4500;
-            }
-        </style>
-    {%endif%}
-
     <title>jyobiweb</title>
 </head>
 <body>
     <!-- サイト中身　ここから -->
-    <form method="POST" action="signin" >
+    <form method="POST" action="*" >
         <ul>
             <h1>ログインフォーム</h1>
             <li>
@@ -26,7 +18,7 @@
                 <input type="password" name="p_word" id="p_word">
             </li>
             <li><input type="submit" value="sign in"" id="button" ></li>
-            <a href="/signup">アカウント作成がまだの方は</a>
+            <a href="*">アカウント作成がまだの方は</a>
         </ul>
     </form>
     <!-- ここまで -->
